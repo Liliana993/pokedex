@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(218, 213, 206);
+}
+
+header{
+    background-color: rgb(248, 248, 248);
+    padding-block: 1rem;
+    box-shadow: 0 0 1rem 1rem #202020;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding-inline: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav img{
+    width: 200px;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.btn-header{
+    background-color: rgb(189, 189, 197);
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgba(0,0,0,.5);
+    transition: .2s;
+}
+
+.btn-header:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgb(0,0,0,.5);
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+main{
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pokemon-todos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media(min-width: 400px){
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 700px){
+    .pokemon-todos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.pokemon{
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,.5);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.pokemon-id-back{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(222, 219, 219);
+    z-index: -1;
+}
+
+.pokemon-img{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-img img{
+    width: 100%;
+    max-width: 5rem;
+}
+
+.pokemon-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.nombre-contenedor{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-id{
+    background-color: rgb(200, 199, 199);;
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.pokemon-nombre{
+    font-size: 1.4rem;
+}
+
+.pokemon-tipos{
+    display: flex;
+    gap: .5rem;
+    font-size: .75rem;
+    font-weight: 500;flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipo{
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
+}
+
+.pokemon-stats{
+    display: flex;
+    gap: 1rem;
+    font-size: .85rem;
+}
+
+.stat{
+    background-color: rgb(200, 199, 199);
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
+}
+
+.normal{
+    background-color: gray;
+}
+
+.fire{
+    background-color: red;
+    color: white;
+}
+
+.water{
+    color: white;
+    background-color: skyblue;
+}
+
+.grass{
+    background-color: green;
+}
+
+.electric{
+    background-color: orangered;
+}
+
+.ice{
+    background-color: aqua;
+}
+
+.fighting{
+    background-color: rgb(153, 101, 24);
+    color: white;
+}
+
+.poison{
+    background-color: blueviolet;
+}
+
+.ground{
+    background-color: yellowgreen;
+}
+
+.flying{
+    background-color: purple;
+    color: white;
+}
+
+.psychic{
+    background-color: salmon;
+}
+
+.bug{
+    background-color: greenyellow;
+}
+
+.rock{
+    background-color: goldenrod;
+}
+
+.ghost{
+    background-color: rgb(108, 108, 241);
+}
+
+.dark{
+    background-color: brown;
+    color: white;
+}
+
+.dragon{
+    background-color: palevioletred;
+    color: white;
+}
+
+.steel{
+    background-color: gainsboro;
+}
+
+.fairy{
+    background-color: rgb(191, 24, 197);
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(248, 248, 248);
+    padding-block: 1rem;
+    box-shadow: 0 0 1rem 1rem #202020;
+    text-align: center;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 1rem;
+    transition: .5s;
+}
+
+footer .redes a:hover{
+    color: rgb(189, 146, 228);
+}
+
+footer .arriba a:hover{
+    color: rgb(189, 146, 228);
+}
